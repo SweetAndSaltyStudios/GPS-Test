@@ -47,7 +47,7 @@ namespace Wrld.MapCamera
         /// Sets the camera that is then controlled by the Wrld map.
         /// </summary>
         /// <param name="camera">A Unity camera that can provide the frustum for streaming and is controlled by the Wrld map.</param>
-        public void SetControlledCamera(UnityEngine.Camera camera)
+        public void SetControlledCamera(Camera camera)
         {
             m_controlledCamera = camera;
         }
@@ -426,7 +426,7 @@ namespace Wrld.MapCamera
             tiltDegrees = MathsHelpers.Rad2Deg(Math.PI * 0.5 - Math.Atan2(cameraAltitude, distanceAlongGround));
         }
 
-        private UnityEngine.Camera m_controlledCamera;
+        private Camera m_controlledCamera;
         private ApiImplementation m_apiImplementation;
         private CameraInputHandler m_inputHandler;
         private CameraApiInternal m_cameraApiInternal;

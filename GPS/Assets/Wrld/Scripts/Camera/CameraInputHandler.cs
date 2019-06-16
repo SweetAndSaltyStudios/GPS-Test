@@ -287,6 +287,5 @@ namespace Wrld.MapCamera
         {
             m_perPointerShouldConsumeInputDelegate = null;
         }
-
     }
 }

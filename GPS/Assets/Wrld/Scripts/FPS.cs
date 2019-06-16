@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class FPS : MonoBehaviour {
-
+public class FPS : MonoBehaviour
+{
     Text fps = null;
 
 	void Start ()
